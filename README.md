@@ -1,42 +1,25 @@
-# Nuxt 3 Minimal Starter
+To genarate (for static hosting)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
+```
+ $ npx nuxi generate
 ```
 
-## Development Server
+Instant server with python (.output/public)
 
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
+```
+$ python3 -m http.server 8080
 ```
 
-## Production
+---
 
-Build the application for production:
+To build (dynamic server)
 
-```bash
-npm run build
+```
+$ npx nuxi build
 ```
 
-Locally preview production build:
+To preview the build
 
-```bash
-npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+$ node .output/server/index.mjs
+```
