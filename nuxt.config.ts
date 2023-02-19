@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxtjs/tailwindcss"],
   app: {
     head: {
-      title: "Julearn Plus",
+      title: "Nuxt3.2.2",
       meta: [{ name: "description", content: "Nuxt3.2.2" }],
       link: [
         {
