@@ -1,16 +1,13 @@
 <template>
-  <div class="hero min-h-screen bg-base-200">
-    <div class="hero-content flex-col lg:flex-row">
-      <div class="card w-96 bg-base-100 shadow-xl">
-        <div class="card-body">
+  <div class="grid grid-col-12">
+    <div class="col-span-12">
+      <div class="flex flex-col justify-center items-center border-2 border-red-500 my-2">
+        <div class="text-center">
           <ContentDoc path="/about/block01" v-slot="{ doc }">
-            <h2 class="card-title">{{ doc.title }}</h2>
+            <h2 class="text-center">{{ doc.title }}</h2>
             <p><ContentRenderer :value="doc" /></p>
           </ContentDoc>
         </div>
-        <figure>
-          <img src="https://placeimg.com/400/225/arch" alt="Shoes" />
-        </figure>
       </div>
     </div>
   </div>

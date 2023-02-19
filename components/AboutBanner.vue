@@ -1,15 +1,11 @@
 <template>
-  <div
-    class="hero min-h-screen"
-    style="background-image: url(https://placeimg.com/1000/800/arch)"
-  >
-    <div class="hero-overlay bg-opacity-60"></div>
-    <div class="hero-content text-center text-neutral-content">
-      <div class="max-w-md">
+  <div class="grid grid-col-12">
+    <div class="col-span-12">
+      <div class="flex flex-col justify-center items-center border-2 border-red-500 my-2">
         <ContentDoc path="/about/banner" v-slot="{ doc }">
-          <h1 class="mb-5 text-5xl font-bold">{{ doc.title }}</h1>
-          <p class="mb-5"><ContentRenderer :value="doc" /></p>
-          <button class="btn btn-primary">{{ doc.button }}</button>
+          <h1 class="text-center">{{ doc.title }}</h1>
+          <p class="text-center"><ContentRenderer :value="doc" /></p>
+          <button class="text-center">{{ doc.button }}</button>
         </ContentDoc>
       </div>
     </div>
