@@ -43,7 +43,8 @@ collections:
   - name: "home"
     label: "Home"
     description: The home collection
-    folder: "/content/02.home"
+    # folder: "/content/02.home"
+    folder: "/content/01.main/00.banner.md"
     create: true
     format: "frontmatter"
     slug: "{{fields.createdAt}}-{{slug}}"
