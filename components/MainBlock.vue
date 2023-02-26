@@ -3,8 +3,7 @@
     <div class="col-span-12">
       <div class="flex flex-col justify-center items-center border-2 border-red-500 my-2">
         <div>
-          [-- have to fix this --]
-          <ContentDoc path="/main" v-slot="{ doc }">
+          <ContentDoc path="/main/banner" v-slot="{ doc }">
             <h1 class="text-center">{{ doc.title }}</h1>
             <small>{{ doc.description }}</small>
             <p class="text-center">

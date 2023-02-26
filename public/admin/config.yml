@@ -2,6 +2,9 @@ site_url: http://localhost:3000
 # site_url: https://github.com/r4nd3l/Nuxt3
 logo_url: https://raw.githubusercontent.com/r4nd3l/Nuxt3/feature/netlify/public/img/myLogo.png
 
+# The search functionally requires loading all collection(s) entries,
+search: true
+
 publish_mode: editorial_workflow
 backend:
   # name: github
@@ -20,7 +23,10 @@ public_folder: "/public/img"
 collections:
   # page - Main
   - name: "main"
+    # preview_path: "blog/{{year}}/{{month}}/{{slug}}"
     label: "Main"
+    description: The main collection
+    # folder: "/content/01.main"
     folder: "/content/01.main"
     create: true
     format: "frontmatter"
@@ -36,6 +42,7 @@ collections:
   # page - Home
   - name: "home"
     label: "Home"
+    description: The home collection
     folder: "/content/02.home"
     create: true
     format: "frontmatter"
@@ -51,6 +58,7 @@ collections:
   # page - About
   - name: "about"
     label: "About"
+    description: The about collection
     label_singular: "About"
     folder: "/content/03.about"
     create: true
@@ -81,6 +89,7 @@ collections:
   # page - Single
   - name: "single"
     label: "Single"
+    description: The single collection
     folder: "/content/04.single"
     create: true
     format: "frontmatter"
@@ -96,6 +105,7 @@ collections:
   # page - Footer
   - name: "footer"
     label: "Footer"
+    description: The footer collection
     folder: "/content/_partials/footer"
     create: true
     format: "frontmatter"
