@@ -26,7 +26,7 @@ collections:
     # preview_path: "blog/{{year}}/{{month}}/{{slug}}"
     label: "Main"
     description: The main collection
-    # folder: "/content/01.main"
+    label_singular: "Main"
     folder: "/content/01.main"
     create: true
     format: "frontmatter"
@@ -43,8 +43,8 @@ collections:
   - name: "home"
     label: "Home"
     description: The home collection
-    # folder: "/content/02.home"
-    folder: "/content/01.main"
+    label_singular: "Home"
+    folder: "/content/02.home"
     create: true
     format: "frontmatter"
     slug: "{{fields.createdAt}}-{{slug}}"
@@ -91,6 +91,7 @@ collections:
   - name: "single"
     label: "Single"
     description: The single collection
+    label_singular: "Single"
     folder: "/content/04.single"
     create: true
     format: "frontmatter"
@@ -107,6 +108,7 @@ collections:
   - name: "footer"
     label: "Footer"
     description: The footer collection
+    label_singular: "Footer"
     folder: "/content/_partials/footer"
     create: true
     format: "frontmatter"
